@@ -1,0 +1,29 @@
+:root{--bg:#f6f7fb;--card:#ffffff;--accent:#2b6ef6;--muted:#666;--logo-size:48px}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body{background:var(--bg);margin:0;padding:20px}
+.container{max-width:900px;margin:0 auto}
+header{margin-bottom:12px}
+h1{margin:0;font-size:20px}
+.chat-window{min-height:400px;background:var(--card);border-radius:8px;padding:16px;overflow:auto;border:1px solid #e6e9ef}
+.chat-form{display:flex;margin-top:12px}
+.chat-form input{flex:1;padding:10px;border-radius:6px;border:1px solid #ccd7f3;margin-right:8px}
+.chat-form button{background:var(--accent);color:#fff;border:none;padding:10px 16px;border-radius:6px}
+.message{margin:8px 0;padding:8px 12px;border-radius:8px}
+.message.You{align-self:flex-end;background:#eaf1ff;border:1px solid #d0e0ff}
+.message.Assistant{background:#f3f4f6;border:1px solid #e6e9ef}
+.message .role{font-size:12px;color:var(--muted);margin-bottom:4px}
+.message .text{white-space:pre-wrap}
+.sources{margin-top:10px;padding:8px;border-top:1px dashed #e0e6f3}
+.sources ul{margin:8px 0 0 16px}
+.sources a{text-decoration:none;color:var(--accent)}
+.sim{color:var(--muted);font-size:12px;margin-left:6px}
+footer{margin-top:14px;color:var(--muted)}
+
+
+        /* Circular logo style */
+        .logo-circular {
+            border-radius: 50%;
+            background: transparent;
+            padding: 0;
+            border: none;
+        }
