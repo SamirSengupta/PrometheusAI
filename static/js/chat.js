@@ -1,12 +1,12 @@
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAPmNRiyRQFtA9U5V7b2nqoDDOGJa5KLpo",
-    authDomain: "peteai-3536c.firebaseapp.com",
-    projectId: "peteai-3536c",
-    storageBucket: "peteai-3536c.firebasestorage.app",
-    messagingSenderId: "949807627453",
-    appId: "1:949807627453:web:81b13a46fbbf462c3b0bd4",
-    measurementId: "G-803TL0LL28"
+    apiKey: "YOUR API KEY HERE",
+    authDomain: "YOUR AUTH DOMAIN HERE",
+    projectId: "YOUR PROJECT ID HERE",
+    storageBucket: "YOUR STORAGE BUCKET HERE",
+    messagingSenderId: "YOUR MESSAGING SENDER ID HERE",
+    appId: "YOUR APP ID HERE",
+    measurementId: "YOUR MEASUREMENT ID HERE"
 };
 
 // Initialize Firebase
