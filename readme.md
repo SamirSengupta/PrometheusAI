@@ -7,7 +7,7 @@ Ask questions, upload PDFs/images (OCR), and get real-time web answers – all t
 
 ## What it is
 
-A self-hosted chat interface that wires a **local LLM** (LM Studio) to **web search** + **document OCR** so you can talk to your files and the internet without sending data anywhere.
+A self-hosted chat interface that wires a **local LLM** (LM Studio) to **web search** + **document OCR**, so you can talk to your files and the internet without sending data anywhere.
 
 ---
 
@@ -28,20 +28,18 @@ A self-hosted chat interface that wires a **local LLM** (LM Studio) to **web sea
 
 ## Quick-start (Windows / macOS / Linux)
 
-1. **Install prerequisites**
+### 1. Install prerequisites
 ```bash
 # Python 3.9+
 python --version
 
 # LM Studio
 # Download https://lmstudio.ai → start it → load any model → leave server running on localhost:1200
-Clone / unzip this project
-
+2. Clone / unzip this project
 bash
 Copy code
 cd PrometheusAI
-Create & activate virtual environment
-
+3. Create & activate virtual environment
 bash
 Copy code
 # macOS/Linux
@@ -51,21 +49,18 @@ source venv/bin/activate
 # Windows
 python -m venv venv
 venv\Scripts\activate
-Install Python dependencies
-
+4. Install Python dependencies
 bash
 Copy code
 pip install -r requirements.txt
-(Optional) Install OCR
-
+5. (Optional) Install OCR
 Windows: choco install tesseract or download installer
 
 macOS: brew install tesseract
 
 Linux: sudo apt install tesseract-ocr poppler-utils
 
-Run
-
+6. Run
 bash
 Copy code
 python app.py
@@ -105,13 +100,11 @@ Prefix any message with “latest”, “current”, “today”, “news”, et
 The bot will scrape top 2 Brave/Bing results and cite URLs.
 
 Streaming vs Non-Streaming
-
 Normal: /api/chat → full response at once
 
 Streaming: /api/chat/stream → typewriter effect (used by UI)
 
 API Examples
-
 bash
 Copy code
 # Health
@@ -144,23 +137,3 @@ Change SECRET_KEY before any public deployment.
 
 License
 MIT – do what you want, no warranty.
-
-Next Steps / Hacks
-Replace Google login with local auth or LDAP.
-
-Add vector DB for “chat with thousands of PDFs”.
-
-Package everything in a single executable with PyInstaller.
-
-Use llama-cpp-python instead of LM Studio for a true one-binary install.
-
-Happy self-hosting!
-
-pgsql
-Copy code
-
-This is **pure Markdown**, fully compatible with GitHub.  
-
-If you want, I can also **add badges (Python, Flask, License) and a screenshot section** to make it look like a professional open-source README.  
-
-Do you want me to do that?
